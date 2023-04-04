@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-color: #161616;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  background-image: url(./images/herobg.png);
+  background-position:top right;
+  background-repeat: no-repeat;
+}
+
+img{
+  width: 100%;
+}
