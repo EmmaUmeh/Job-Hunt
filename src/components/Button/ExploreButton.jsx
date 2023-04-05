@@ -12,6 +12,16 @@ cursor: pointer;
 margin-top: -10px;
 border-radius: 5px;
 margin-left: 10px;
+
+@media (max-width: 480px) {
+    margin-top: 6px;
+    margin-left: 0;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    margin-top: 6px;
+    margin-left: 10px;
+}
 `;
 
 export default function ExploreButton() {

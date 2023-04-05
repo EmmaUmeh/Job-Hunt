@@ -1,10 +1,14 @@
-import { Container, Flex, HomeUrl, BlogUrl, PagesUrl, ListUrl, LogoUrl, CartUrl, } from "./Navbarstyle";
+import { Container, Flex, HomeUrl, BlogUrl, PagesUrl, ListUrl, LogoUrl, CartUrl, ToggleButton} from "./Navbarstyle";
 import { Navdatas } from "./Navdata";
 import  LogoImage from '../../images/JobhuntLogo.svg';
 import Button from "../Button/Button";
+import {BiMenu, BiX} from "react-icons/bi"
+import { useState } from "react";
 
 export default function Navbar() {
 
+    const [toggle, setToggle] = useState(false)
+    const HandleClick = () => setToggle(!toggle);
     return(
         <>
         <Container>
@@ -18,7 +22,7 @@ export default function Navbar() {
                     <img src={LogoImage} alt={Navdata.LogoAlt}/>
                 </LogoUrl>
 
-             <ListUrl>
+             <ListUrl primary>
                 <HomeUrl>{Navdata.HomeUrl}</HomeUrl>
                 <PagesUrl>{Navdata.PagesUrl}</PagesUrl>
 
@@ -29,7 +33,18 @@ export default function Navbar() {
                 <Button />
              </ListUrl>
 
-            
+
+
+            <ToggleButton onClick={HandleClick}>
+                {
+                    toggle 
+                    ?
+                    <BiX size="40px"/>
+                    :
+                <BiMenu size="40px"/>
+                }
+            </ToggleButton>
+
             </Flex>
         ))
     }

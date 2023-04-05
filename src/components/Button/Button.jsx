@@ -12,6 +12,10 @@ font-weight: meduim;
 cursor: pointer;
 margin-top: -10px;
 border-radius: 5px;
+
+@media (max-width: 480px) {
+    margin-top: 20px;
+}
 `;
 
 export default function Button() {

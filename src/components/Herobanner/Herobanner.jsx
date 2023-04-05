@@ -9,9 +9,8 @@ export default function Herobanner() {
             <Flex>
               <HeadingTags>
                 <HeroHeadingOne>
-                        A spot for creatives to
+                        A spot for creatives to <span className="getnone">get a job</span>
                     </HeroHeadingOne>
-
                     <HeroHeadingTwo>
                          get a job
                     </HeroHeadingTwo>
