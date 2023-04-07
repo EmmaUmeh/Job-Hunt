@@ -1,6 +1,6 @@
 import ExploreButton from "../Button/ExploreButton"
 import Search from "../Search/Search"
-import { Container, Flex, HeroHeadingOne, HeadingTags, HeroHeadingTwo, ParagraphContainer, Heroparagraph, Searchspan, SearchContainer } from "./Herostyles"
+import { Container, Flex, HeroHeadingOne, HeroHeadingTwo, HeadingTags, ParagraphContainer, Heroparagraph, Searchspan, SearchContainer } from "./Herostyles"
 
 export default function Herobanner() {
     return(

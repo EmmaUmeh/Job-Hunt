@@ -32,9 +32,10 @@ font-weight: bolder;
 
 /* Small Screen */
 @media (max-width: 480px) {
-font-size: 40px;
-line-height: 60px;
+font-size: 30px;
+line-height: 40px;
 width: 100%;
+
 .getnone{
     display: block;
 }
@@ -42,6 +43,16 @@ width: 100%;
 
 
 @media (min-width: 480px) and (max-width: 768px) {
+    font-size: 40px;
+    line-height: 60px;
+    width: 100%;
+    .getnone{
+        display: block;
+    }
+    }
+
+
+    @media (min-width: 768px) and (max-width: 860px) {
     font-size: 40px;
     line-height: 60px;
     width: 100%;
@@ -60,7 +71,7 @@ font-weight: bolder;
 
 @media (max-width: 480px) {
     font-size: 50px;
-    margin-top: -10px;
+    /* margin-top: -10px; */
   display: none;
     }
 
@@ -73,11 +84,20 @@ font-weight: bolder;
             display: block;
         }
         }
+
+        
+    @media  (min-width: 768px) and (max-width: 860px) {
+        font-size: 40px;
+        line-height: 60px;
+        width: 100%;
+        display: none;
+        .getnone{
+            display: block;
+        }
+        }
 `;
 
 export const HeadingTags = styled.div`
-// display: flex;
-// justify-content: center;
 
 @media (max-width: 480px) {
    
