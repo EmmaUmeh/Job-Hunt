@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-width: 100%;
-padding: 35px 20px 20px 20px;
-`;
 
 export const LogoUrl = styled.div`
 width: 15%;
@@ -21,10 +17,24 @@ z-index: 1;
     }
 `;
 
-export const Flex = styled.div`
+export const Nav = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
+width: 100%;
+padding: 40px 40px 20px 20px;
+background: none;
+flex-wrap: wrap;
+
+@media (max-width: 768px) {
+background: #161616;
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+background: #161616;
+
+}
 `;
 
 // export const ListContainer = styled.div`
@@ -32,28 +42,35 @@ align-items: center;
 // `;
 
 export const ListUrl = styled.div`
-display: flex;
+   display: flex;
+   align-items: center;
+   position: relative;
 
-@media (max-width: 480px) {
-    display: ${props => props.primary ? 'none' : 'block'};
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 80px 5px 20px 25px;
-    background: #121212;
+   /* display: none; */
+@media (max-width: 768px) {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 5px 5px;
     width: 100%;
+   height: ${({toggle}) => (toggle ? '50vh' : '0')};
+   transition: height 0.3s ease-in;
+   
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 5px 5px;
+    width: 100%;
+   height: ${({toggle}) => (toggle ? '50vh' : '0')};
+   transition: height 0.3s ease-in;
+
 }
 
 /* Meduim Screen */
-@media (min-width: 480px) and (max-width: 768px) {
-    display: ${props => props.primary ? 'none' : 'block'};
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 80px 5px 20px 25px;
-    background: #121212;
-    width: 100%;
- }
+
 
 `;
 
@@ -62,6 +79,17 @@ margin-right: 90px;
 // padding-right: 90px;
 color: white;
 font-weight: 600;
+
+@media (max-width: 768px) {
+    margin-right: 0px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    margin-right: 0px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
 `;
 
 
@@ -69,18 +97,50 @@ export const BlogUrl = styled.div`
 margin-right: 90px;
 color: white;
 font-weight: 600;
+
+@media (max-width: 768px) {
+    margin-right: 0px;
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    margin-right: 0px;
+    padding-bottom: 10px;
+}
 `;
 
 export const PagesUrl = styled.div`
 margin-right: 90px;
 color: white;
 font-weight: 600;
+
+@media (max-width: 768px) {
+    margin-right: 0px;
+
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    margin-right: 0px;
+    padding-bottom: 10px;
+
+}
 `;
 
 export const CartUrl = styled.div`
 margin-right: 20px;
 color: white;
 font-weight: 600;
+
+
+@media (max-width: 768px) {
+    margin-right: 0px;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    margin-right: 0px;
+    padding-bottom: 20px;
+
+}
 `;
 
 export const ToggleButton = styled.button`
@@ -89,6 +149,7 @@ color: white;
 outline: none;
 border: none;
 cursor: pointer;
+/* flex-direction: column; */
 display: none;
 
 @media (max-width: 480px) {
@@ -103,4 +164,9 @@ display: none;
     
  }
 
+ @media (min-width: 768px) and (max-width: 900px) {
+    display: block;
+    z-index: 1;
+
+}
 `

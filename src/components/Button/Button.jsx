@@ -8,13 +8,15 @@ color: #ffffff;
 padding: 15px 25px 15px 25px;
 font-family: 'Work Sans', sans-serif;
 font-size: 18px;
-font-weight: meduim;
+font-weight: medium;
 cursor: pointer;
 margin-top: -10px;
 border-radius: 5px;
 
 @media (max-width: 480px) {
     margin-top: 20px;
+    padding: 15px 5px 15px 5px;
+    width: 50%;
 }
 `;
 
