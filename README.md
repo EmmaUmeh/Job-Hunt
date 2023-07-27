@@ -8,5 +8,6 @@ Job Hunt is a job searching app.
 
 ### Tech Stacks
 
+* React
 * Javscript
 * Styled Components
